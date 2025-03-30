@@ -20,3 +20,7 @@ $(call inherit-product, vendor/samsung/u8500-common/codina/codina-vendor-blobs.m
 $(call inherit-product, vendor/samsung/u8500-common/janice/janice-vendor-blobs.mk)
 #endif
 
+#ifeq ($(PRODUCT_DEVICE),golden)
+$(call inherit-product, vendor/samsung/u8500-common/golden/golden-vendor-blobs.mk)
+#endif
+
